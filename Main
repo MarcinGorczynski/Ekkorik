@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] tablica = new int[5]; // nowa rzecz - 5 to ymiar tablicy 
+            tablica[3] = 1; // 0 to zawsze pozycja pierwsza - pojawi sie w 3 pozycji
+
+            foreach (int x in tablica) // for each to pętla
+            {
+                Console.WriteLine(x);
+            }
+
+ Console.ReadKey();
