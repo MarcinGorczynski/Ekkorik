@@ -4,18 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] tablica = new int[5]; // nowa rzecz - 5 to ymiar tablicy 
-            tablica[3] = 1; // 0 to zawsze pozycja pierwsza - pojawi sie w 3 pozycji
+            Console.WriteLine("podaj swoje imie"); //prosi o podanie imienia 
+            string imie = Console.ReadLine(); // tu użytkownik wpisuje z klawiatury imie
+            Console.WriteLine("Cześć " + imie); // tu jest stała cześć + imie które zostało wprowadzone
 
-            foreach (int x in tablica) // for each to pętla
-            {
-                Console.WriteLine(x);
-            }
+            Console.WriteLine("podaj A"); // prosi o podanie A
+            int a = int.Parse(Console.ReadLine()); //
+            Console.WriteLine("podaj B"); // prosi o podanie B
+            int b = int.Parse(Console.ReadLine()); //
+            int w = a + b;
 
- Console.ReadKey();
+            Console.WriteLine(a + " + " + b + " = " + w);
+            Console.WriteLine(a + b + w);
+
+            Console.ReadKey();
+        }
+    }
+}
